@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Courses</title>
+<!--    <style>-->
+<!--        .pagination {-->
+<!--            display: inline-block;-->
+<!--        }-->
+
+<!--        .pagination a {-->
+<!--            color: black;-->
+<!--            float: left;-->
+<!--            padding: 8px 16px;-->
+<!--            text-decoration: none;-->
+<!--        }-->
+<!--    </style>-->
+</head>
+<body>
+<nav>
+    <ul class="flex justify-center items-center">
+        <li class="m-1">
+            <a href="/">Home</a>
+        </li>
+        <li class="m-1">
+            <a href="/courses.html">Courses</a>
+        </li>
+    </ul>
+</nav>
+
+<div  class="overflow-x-auto relative pt-20  md:pt-24">
+    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 ">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+        <tr>
+            <th scope="col" class=" py-3 px-2 md:px-6">
+                Course
+            </th>
+            <th scope="col" class=" py-3 px-2 md:px-6">
+                Instructor
+            </th>
+
+            <th scope="col" class="py-3 px-2 md:px-6">
+                Rating
+            </th>
+            <th scope="col" class="py-3 px-2 md:px-6">
+                DELETE
+            </th>
+
+        </tr>
+        </thead>
+        <tbody id="table">
+        </tbody>
+    </table>
+</div>
+
+<div id="selectedInstructor" class="flex justify-center items-center">
+
+</div>
+<ol id="selectedCourse"></ol>
+<script>
+    
+</script>
+
+<script src="js/courses.js"></script>
+<!--<script type="text/javascript" src="//www.turnjs.com/lib/turn.min.js "></script>-->
+</body>
+</html>
